@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0f0f20;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-section, .list-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #0f0f20;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="url"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0f0f20;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.secondary-button {
+    background-color: #051a31;
+}
+
+.secondary-button:hover {
+    background-color: #051a31;
+}
+
+#searchId {
+    margin-bottom: 15px;
+    width: calc(100% - 150px); /* Ajuste para caber os botões */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.colaborador-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.colaborador-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.colaborador-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.colaborador-card .edit-button {
+    background-color: #2196F3;
+}
+
+.colaborador-card .edit-button:hover {
+    background-color: #0b7dda;
+}
+
+.colaborador-card .delete-button {
+    background-color: #051a31;
+}
+
+.colaborador-card .delete-button:hover {
+    background-color: #051a31;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}

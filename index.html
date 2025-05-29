@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores - RH</title>
+    <link rel="stylesheet" href="style.css">
+    <favicon href="logo-2.webp" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <img src="logo.webp" alt="Logo da Empresa" class="header-logo" style="width: 200px;">
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Cadastrar/Editar Colaborador</h2>
+            <form id="colaboradorForm">
+                <input type="hidden" id="colaboradorId">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" required>
+
+                <label for="foto">Link da Foto:</label>
+                <input type="url" id="foto">
+
+                <label for="linkCurriculo">Link do Currículo:</label>
+                <input type="url" id="linkCurriculo">
+
+                <button type="submit" id="submitButton">Cadastrar</button>
+                <button type="button" id="clearFormButton" class="secondary-button">Limpar Formulário</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Colaboradores</h2>
+            <input type="text" id="searchId" placeholder="Pesquisar por ID ou Email">
+            <button type="button" id="searchButton">Pesquisar</button>
+            <button type="button" id="loadAllButton" class="secondary-button">Carregar Todos</button>
+            <div id="colaboradoresList">
+                <p>Nenhum colaborador cadastrado ainda.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RH - Gestão de Colaboradores</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
